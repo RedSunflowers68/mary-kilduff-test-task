@@ -41,6 +41,8 @@
   padding-left: 24px;
 
   &-label {
+    display: flex;
+    flex-direction: row;
     @include typography("label sm");
     height: 23px;
     width: 81px;
@@ -60,14 +62,17 @@
 .adventure {
   background-color: $color-secondary-100;
   color: $color-secondary-700;
+  justify-content: center;
 }
 
 .luxury {
   background-color: $color-primary-100;
   color: $color-primary-700;
+  justify-content: center;
 }
 
 .romantic {
   background-color: $color-neutrals-100;
   color: $color-neutrals-700;
+  justify-content: center;
 }
