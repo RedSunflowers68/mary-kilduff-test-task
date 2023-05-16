@@ -41,8 +41,6 @@
   padding-left: 24px;
 
   &-label {
-    display: flex;
-    flex-direction: row;
     @include typography("label sm");
     height: 23px;
     width: 81px;
@@ -51,11 +49,15 @@
   }
   &-title {
     @include typography("heading sm");
+    padding-right: 24px;
   }
   &-location {
     display: flex;
     flex-direction: row;
-    @include typography("label sm");
+    p {
+      @include typography("label sm");
+      padding-left: 10px;
+    }
   }
 }
 
