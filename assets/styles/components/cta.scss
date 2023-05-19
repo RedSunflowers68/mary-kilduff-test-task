@@ -1,8 +1,9 @@
 .cta {
   display: flex;
   flex-direction: column;
-  padding: 0px 8% 15%;
   height: 212px;
+  padding-left: 80px;
+
   &_top {
     display: flex;
     flex-direction: row;
@@ -16,7 +17,7 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      margin-right: 2%;
+      margin-right: 8%;
       width: 120px;
       height: 44px;
       border-radius: 8px;
