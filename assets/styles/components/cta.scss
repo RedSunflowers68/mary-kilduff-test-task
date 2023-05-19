@@ -1,0 +1,42 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8% 15%;
+  height: 212px;
+  &_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    &-heading {
+      @include typography("heading lg");
+    }
+    &-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 2%;
+      width: 120px;
+      height: 44px;
+      border-radius: 8px;
+      border-color: $color-neutrals-300;
+      background-color: $color-base-white;
+      @include typography("label md");
+      color: $color-neutrals-700;
+      &-img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  &_bottom {
+    width: 532px;
+    &-p {
+      width: 532px;
+      top: 74px;
+      @include typography("text lg");
+      line-height: 28.8px;
+    }
+  }
+}

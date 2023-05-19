@@ -19,11 +19,17 @@
 .card {
   &__media {
     width: 400px;
+    overflow: hidden;
+    height: 400px;
 
     &-image {
       width: 400px;
       height: 400px;
       border-radius: 8px;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.5);
+      }
     }
   }
 }
@@ -33,7 +39,7 @@
   position: absolute;
   justify-content: flex-end;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-  height: 180px;
+  height: 160px;
   width: 400px;
   color: $color-base-white;
   border-radius: 8px;
@@ -42,6 +48,7 @@
 
   &-label {
     @include typography("label sm");
+    line-height: 0;
     height: 23px;
     width: 81px;
     text-align: center;
@@ -54,6 +61,7 @@
   &-location {
     display: flex;
     flex-direction: row;
+    padding-bottom: 20px;
     p {
       @include typography("label sm");
       padding-left: 10px;
@@ -65,16 +73,19 @@
   background-color: $color-secondary-100;
   color: $color-secondary-700;
   justify-content: center;
+  line-height: 20px;
 }
 
 .luxury {
   background-color: $color-primary-100;
   color: $color-primary-700;
   justify-content: center;
+  line-height: 20px;
 }
 
 .romantic {
   background-color: $color-neutrals-100;
   color: $color-neutrals-700;
   justify-content: center;
+  line-height: 20px;
 }
